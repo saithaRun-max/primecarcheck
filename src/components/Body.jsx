@@ -5,7 +5,7 @@ import Home from "./Home";
 
 const Body = () => {
   return (
-    <div>
+    <div className="h-screen w-screen box-border">
       <Navbar />
       <Home />
       <Footer />
