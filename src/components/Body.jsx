@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import CarInspection from "./CarInspection";
 import Maintence from "./Maintence";
+import ServicesOffer from "./ServicesOffer";
 
 const Body = () => {
   return (
@@ -12,6 +13,7 @@ const Body = () => {
       <Home />
       <CarInspection />
       <Maintence />
+      <ServicesOffer />
       <Footer />
     </div>
   );

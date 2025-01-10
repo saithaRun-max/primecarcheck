@@ -7,7 +7,7 @@ const CarInspection = () => {
       <div className="relative -z-50 ">
         <img src={gridBackground} className="bg-[#F2F3F8] h-[720px] w-full " />
       </div>
-      <div className="-mt-[720px]">
+      <div className="-mt-[720px] px-32">
         <div className="hero px-8  min-h-[720px] flex justify-center align-middle relative">
           <div className="hero-content flex-col lg:flex-row  ml-4 -mt-12  ">
             <div className="-mt-20">
