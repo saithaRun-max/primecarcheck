@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <>
-      <div ref={carouselRef} className="carousel carousel-center w-full h-full">
+      <div ref={carouselRef} className="carousel carousel-center w-full h-full -z-50 relative">
         {carouselImgSrc.map((imgSrc) => (
           <div key={imgSrc} className="carousel-item">
             <img
