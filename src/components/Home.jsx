@@ -1,55 +1,43 @@
-import { useEffect, useRef, useState } from "react";
-import Slider_1 from "../assets/image-2.jpg";
-import Slider_2 from "../assets/image-4.jpg";
-import Slider_3 from "../assets/image-6.jpg";
+import { data } from "./data.js";
+import Slider from "react-slick";
 
 const Home = () => {
-  const [carouselActiveItem, setcarouselActivetem] = useState(0);
-
-  const carouselRef = useRef(null);
-  const carouselImgSrc = [Slider_1, Slider_2, Slider_3];
-  const imgWidth = 1070;
-  const imgHeight = 200;
-
-  const scrollItem = () => {
-    setcarouselActivetem((preState) => {
-      if (carouselImgSrc.length - 2 > preState) {
-        return preState + 1;
-      } else {
-        return 0;
-      }
-    });
+  const additionals = {
+    autoplay: true,
+    autoplaySpeed: 300,
+    initialSlide: 1,
   };
-
-  const autoPlay = () => {
-    setInterval(scrollItem, 2000, []);
-  };
-
-  useEffect(() => {
-    const play = autoPlay();
-    return () => clearInterval(play);
-  }, [autoPlay]);
-  useEffect(() => {
-    carouselRef.current?.scroll({ left: imgWidth * carouselActiveItem });
-  }, [carouselActiveItem]);
 
   return (
     <>
-      <div ref={carouselRef} className="carousel carousel-center w-full h-full -z-50 relative">
-        {carouselImgSrc.map((imgSrc) => (
-          <div key={imgSrc} className="carousel-item">
-            <img
-              className="w-full"
-              width={imgWidth}
-              height={imgHeight}
-              src={imgSrc}
-              alt="image"
-            />
+      <div className="w-full h-[620px] ">
+        <Slider
+          additionals
+          className="w-full h-[620px] overflow-hidden"
+          customPaging={(i) => {
+            return (
+              <div className="flex justify-between">
+                <img
+                  src={data[i]}
+                  alt="img"
+                  className="w-10 h-10 object-cover"
+                />
+              </div>
+            );
+          }
+        
+        }
+        >
+          <div className="">
+            {data.map((item) => (
+              <div className="">
+                <img src={item} alt="" className="h-[620px] w-full" />
+              </div>
+            ))}
           </div>
-        ))}
+        </Slider>
       </div>
     </>
   );
 };
-
 export default Home;

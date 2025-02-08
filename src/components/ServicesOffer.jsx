@@ -7,7 +7,7 @@ const ServicesOffer = () => {
   return (
     <>
       <div className="bg-white flex-col px-40 h-full">
-        <div className="pt-52">
+        <div className="pt-20">
           <h2 className="text-4xl text-center   font-bold text-[#0F774A]">
             Services that we Offer
           </h2>

@@ -4,7 +4,7 @@ import simplifyselling from "../assets/simplifyselling.jpg";
 const Maintence = () => {
   return (
     <>
-      <div className="w-screen  bg-white px-32">
+      <div className="w-screen  bg-white px-44">
         <div className="py-16 flex justify-center">
           <h2 className="text-4xl font-bold text-[#0F774A]">
             Maintenance Report
@@ -13,15 +13,15 @@ const Maintence = () => {
         <div className="flex">
         <div className=" w-[600px] flex-col justify-start">
           <figure>
-            <img className="ml-8" src={topCar} alt="img" />
+            <img className="" src={topCar} alt="img" />
           </figure>
 
-          <div className="card-body">
-            <h2 className="card-title text-2xl font-bold text-[#0F774A]">
+          <div className="py-4">
+            <h2 className=" text-2xl font-bold text-[#0F774A]">
               Keep Your Car in Top Shape with Self-Check <br /> Reports
             </h2>
 
-            <div className="h-[2px] bg-[#E3E3E3] w-[550px] mt-4">
+            <div className="h-[2px] bg-[#E3E3E3] w-[550px] my-4 ">
               <div className="w-20 h-[2px] bg-[#EE0D09]"></div>
             </div>
             <p className="text-base text-[#212529]">
@@ -56,17 +56,17 @@ const Maintence = () => {
           </div>
         </div>
 
-        <div className=" w-[600px] flex-col justify-start">
+        <div className=" w-[600px] flex-col justify-start ml-4">
           <figure>
-            <img className="ml-8" src={simplifyselling} alt="img" />
+            <img className="" src={simplifyselling} alt="img" />
           </figure>
 
-          <div className="card-body">
-            <h2 className="card-title text-2xl font-bold text-[#0F774A]">
+          <div className="py-4">
+            <h2 className=" text-2xl font-bold text-[#0F774A] ">
             Simplify Selling Your Car with Detailed Reports
             </h2>
 
-            <div className="h-[2px] bg-[#E3E3E3] w-[550px] mt-12">
+            <div className="h-[2px] bg-[#E3E3E3] w-[550px] mt-12 my-4">
               <div className="w-20 h-[2px] bg-[#EE0D09]"></div>
             </div>
             <p className="text-base text-[#212529]">

@@ -8,7 +8,7 @@ const BenfitsOfService = () => {
       <div className="relative -z-50 bg-[#F2F3F8] ">
         <img src={background} className="" />
       </div>
-      <div className=" -mt-[620px] ">
+      <div className=" -mt-[620px] mb-28 ">
         <div className="flex mx-52">
           <div className="">
             <div className="ml-28 mb-4">
