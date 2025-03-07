@@ -5,7 +5,6 @@ import Home from "./Home";
 import CarInspection from "./CarInspection";
 import Maintence from "./Maintence";
 import ServicesOffer from "./ServicesOffer";
-import ServiceBrands from "./ServiceBrands";
 import BenfitsOfService from "./BenfitsOfService";
 import WhyChoose from "./WhyChoose";
 import NoteBottom from "./NoteBottom";
@@ -19,7 +18,6 @@ const Body = () => {
         <CarInspection />
         <Maintence />
         <ServicesOffer />
-        <ServiceBrands />
         <BenfitsOfService />
         <WhyChoose />
         <NoteBottom />

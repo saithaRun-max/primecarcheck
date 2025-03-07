@@ -5,18 +5,18 @@ import { MdCheckCircleOutline } from "react-icons/md";
 const BenfitsOfService = () => {
   return (
     <>
-      <div className="relative -z-50 bg-[#F2F3F8] ">
-        <img src={background} className="" />
+      <div className="relative  bg-[#F2F3F8] mt-[780px] md:mt-28 ">
+        <img src={background} className="md:h-[520px] h-[700px] w-full" />
       </div>
-      <div className=" -mt-[620px] mb-28 ">
-        <div className="flex mx-52">
+      <div className="relative z-50 md:-mt-[420px] -mt-[680px] ">
+        <div className="flex-row md:flex justify-center md:justify-start  md:ml-44">
           <div className="">
-            <div className="ml-28 mb-4">
-              <h2 className="text-[#0F774A] font-bold text-4xl ">
-                Benefits of Inspection
+            <div className="md:ml-40  mb-4 ">
+              <h2 className="text-[#0F774A] font-bold text-4xl text-center ">
+                Benefits of <br className="md:hidden" /> Inspection
               </h2>
             </div>
-            <div>
+            <div className="flex-row mx-12 md:mx-0 md:ml-10 my-4">
               <div className="flex align-middle">
                 <MdCheckCircleOutline className="text-[#4C4646] text-xl mr-2 mt-1" />
                 <p className="text-[#4C4646] text-lg ">Saftety Assurance</p>
@@ -65,8 +65,11 @@ const BenfitsOfService = () => {
               </div>
             </div>
           </div>
-          <div className="ml-40">
-          <img src={carCheckingImg} className="h-[312px] w-[470px]" />
+          <div className="md:ml-40 md:mt-2 mx-4 md:mb-0 mb-28">
+            <img
+              src={carCheckingImg}
+              className="md:h-[312px] md:w-[470px] w-[380px] h-[250px]"
+            />
           </div>
         </div>
       </div>

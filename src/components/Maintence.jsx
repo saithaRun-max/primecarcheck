@@ -4,24 +4,24 @@ import simplifyselling from "../assets/simplifyselling.jpg";
 const Maintence = () => {
   return (
     <>
-      <div className="w-screen  bg-white px-44">
-        <div className="py-16 flex justify-center">
-          <h2 className="text-4xl font-bold text-[#0F774A]">
+      <div className="w-screen  bg-white md:px-44 relative ">
+        <div className="md:py-16 py-10 px-4 md:flex-col flex-row justify-center">
+          <h2 className="md:text-4xl text-3xl font-bold text-[#0F774A] text-center">
             Maintenance Report
           </h2>
         </div>
-        <div className="flex">
-        <div className=" w-[600px] flex-col justify-start">
+        <div className="md:flex flex-row">
+        <div className=" md:w-[600px] md:flex-col flex-row justify-start px-2">
           <figure>
-            <img className="" src={topCar} alt="img" />
+            <img className="md:h-[320px] md:w-[570px] h-[220px] w-[390px]" src={topCar} alt="img" />
           </figure>
 
-          <div className="py-4">
+          <div className="py-4 px-2">
             <h2 className=" text-2xl font-bold text-[#0F774A]">
-              Keep Your Car in Top Shape with Self-Check <br /> Reports
+              Keep Your Car in Top Shape with  <br className="block md:hidden"/> Self-Check <br className="hidden md:block"/> Reports
             </h2>
 
-            <div className="h-[2px] bg-[#E3E3E3] w-[550px] my-4 ">
+            <div className="h-[2px] bg-[#E3E3E3] md:w-[550px] my-4 ">
               <div className="w-20 h-[2px] bg-[#EE0D09]"></div>
             </div>
             <p className="text-base text-[#212529]">
@@ -56,17 +56,17 @@ const Maintence = () => {
           </div>
         </div>
 
-        <div className=" w-[600px] flex-col justify-start ml-4">
+        <div className=" md:w-[600px] md:flex-col md:justify-start flex-row mt-8 md:mt-0 md:ml-4 px-2">
           <figure>
-            <img className="" src={simplifyselling} alt="img" />
+            <img className="md:h-[320px] md:w-[570px] h-[220px] w-[390px]" src={simplifyselling} alt="img" />
           </figure>
 
-          <div className="py-4">
+          <div className="py-4 px-2">
             <h2 className=" text-2xl font-bold text-[#0F774A] ">
             Simplify Selling Your Car with Detailed Reports
             </h2>
 
-            <div className="h-[2px] bg-[#E3E3E3] w-[550px] mt-12 my-4">
+            <div className="h-[2px] bg-[#E3E3E3] md:w-[550px] md:mt-12 my-4">
               <div className="w-20 h-[2px] bg-[#EE0D09]"></div>
             </div>
             <p className="text-base text-[#212529]">

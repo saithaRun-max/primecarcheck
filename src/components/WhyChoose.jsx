@@ -8,21 +8,21 @@ import { TbBounceRight } from "react-icons/tb";
 const WhyChoose = () => {
   return (
     <>
-      <div className="h-[700px] w-[1520px] bg-[#EE0D09]">
-        <div className="mx-44 pt-24 flex">
+      <div className="md:h-[700px] md:w-[1520px] w-full bg-[#EE0D09]">
+        <div className="md:mx-44 pt-24 md:pt-18  pb-10 md:pb-0 md:flex flex-row px-4 md:px-0">
           <div>
             <div className="">
               <h2 className="text-4xl text-white font-bold">
                 Why Chose Us ____
               </h2>
             </div>
-            <p className="w-[540px] font-normal text-lg text-white py-8">
+            <p className="md:w-[540px] w-[380px] font-normal text-lg text-white py-8">
               Prime Car Check is a trusted car inspection company dedicated to
               providing thorough and reliable vehicle assessments. Our expert
               team ensures your car is in optimal condition, giving you peace of
               mind and enhancing your vehicle's longevity.
             </p>
-            <div className="mt-3">
+            <div className="my-3">
               <div className="flex ">
                 <AiOutlineSafetyCertificate className="text-5xl text-white" />
 
@@ -56,7 +56,7 @@ const WhyChoose = () => {
               </div>
             </div>
           </div>
-          <div className="ml-8">
+          <div className="md:ml-8 mt-16 md:mt-0">
             <div>
               <h2 className="text-4xl text-white font-bold">
                 What We Check ____
@@ -65,9 +65,9 @@ const WhyChoose = () => {
             <p className="w-[520px] font-normal text-lg text-white pt-4 ">
               Your Vehicle inspection partner
             </p>
-            <div className="flex mt-14">
-              <img src={whatwecheck} className="h-[410px] w-[270px]" />
-              <div className="ml-20">
+            <div className="md:flex flex-row mt-14 md:mt-14">
+              <img src={whatwecheck} className="md:h-[410px] md:w-[270px] h-[425px] w-[380px]" />
+              <div className="md:ml-20 ml-10 mt-8 md:mt-0">
                 <div className="flex ">
                   <TbBounceRight className="text-2xl text-white" />
                   <p className="font-normal text-lg text-white ml-3">
